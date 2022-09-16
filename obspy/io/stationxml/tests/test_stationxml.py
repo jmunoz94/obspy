@@ -1320,11 +1320,3 @@ class StationXMLTestCase(unittest.TestCase):
         # test reading station level
         self.assertEqual(len(inv_stationxml_network), 1)
         self.assertEqual(len(inv_stationxml_network[0]), 0)
-
-
-def suite():
-    return unittest.makeSuite(StationXMLTestCase, "test")
-
-
-if __name__ == '__main__':
-    unittest.main(defaultTest='suite')
